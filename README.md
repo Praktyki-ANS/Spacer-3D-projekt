@@ -71,9 +71,9 @@ Make sure you have the following installed:
 
 Once you have the project set up, you can use it for:
 
-    [Example usage 1]
-    [Example usage 2]
-    [Example usage 3]
+    [for walk through ans bulding]
+    [create your own walking simulator ]
+    [getting to know the surroundings of the building]
 
 Feel free to explore the scenes, assets, and scripts included in the project.
 
@@ -116,8 +116,9 @@ This project is licensed under the MIT License. You can freely use, modify, and 
 
 We would like to thank the following people and resources for their contributions to this project:
 
-    [Person/Organization 1]
-    [Person/Organization 2]
+    [<a href="https://github.com/LebiodaJakub"><strong>Jakub lebioda head of project</strong></a>]
+    [<a href="https://github.com/BananaCollector"><strong>The blender master Witold Banasiak/strong></a>]
+    [<a href="https://github.com/kolefka"><strong>the scripter Arkadiusz Czupajło</strong></a>]
     [Unity Asset Store resources, if applicable]
     [Any other acknowledgments]
 
