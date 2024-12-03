@@ -116,11 +116,11 @@ This project is licensed under the MIT License. You can freely use, modify, and 
 
 We would like to thank the following people and resources for their contributions to this project:
 
-    [Jakub lebioda head of project](https://github.com/LebiodaJakub)
-    [The blender master Witold Banasiak](https://github.com/BananaCollector)
-    [the scripter Arkadiusz Czupajło](https://github.com/kolefka)
-    [Unity Asset Store resources, if applicable]
-    [Any other acknowledgments]
+   [Jakub lebioda head of project](https://github.com/LebiodaJakub)
+   [The blender master Witold Banasiak](https://github.com/BananaCollector)
+   [the scripter Arkadiusz Czupajło](https://github.com/kolefka)
+   [Unity Asset Store resources, if applicable]
+   [Any other acknowledgments]
 
 ---
 
