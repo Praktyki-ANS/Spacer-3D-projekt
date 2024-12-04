@@ -20,9 +20,9 @@ Welcome to the <a href="https://github.com/Praktyki-ANS/Unity/blob/main/Placehol
 This project is an enhanced version of --- built in Unity 3D. It includes improvements such as ---. 
 
 **Key highlights of the project:**
-- [Feature #1]
-- [Feature #2]
-- [Feature #3]
+- [change between areas to walk]
+- [the ability to explore freely]
+- [optimalization to aceptable level]
 
 [Brief project description]
 
@@ -31,9 +31,9 @@ This project is an enhanced version of --- built in Unity 3D. It includes improv
 ## Features
 <a id="features"></a>
 
-- **Feature 1:** Description of feature
-- **Feature 2:** Description of feature
-- **Feature 3:** Description of feature
+- **Feature 1:** add buttons to switch between areas
+- **Feature 2:** before you would only move by click the arrows to directions
+- **Feature 3:** gwarant to stability
 - **Feature 4:** Description of feature
 
 ---
