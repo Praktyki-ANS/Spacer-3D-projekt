@@ -1,6 +1,6 @@
 # Unity 3D Project - Virtual Tour of ANS
 
-Welcome to the <a href="https://github.com/Praktyki-ANS/Unity/blob/main/Placeholder"><strong>our Unity 3D project!</strong></a> This project is based on the <a href="https://github.com/Praktyki-ANS/Unity/blob/main/Placeholder"><strong>older version of Projekt</strong></a> created by ---, but has been enhanced with new features, optimizations, and updates. The goal of this project is to have working Virtual Tour of our college building..
+Welcome to <a href="https://praktyki-ans.github.io/"><strong>our Unity 3D project!</strong></a> This project is based on the <a href="https://github.com/Praktyki-ANS/Unity/blob/main/Placeholder"><strong>older version of Projekt</strong></a> created by ---, but has been enhanced with new features, optimizations, and updates. The goal of this project is to have working Virtual Tour of our college building..
 
 ## Table of Contents
 - [About](#about)
@@ -140,3 +140,5 @@ We would like to thank the following people and resources for their contribution
 
     [Your Name] – Project creator and lead developer
     [Collaborators or contributors] – Special thanks to [insert names]
+# Unity 3D Project - Virtual Tour of ANS
+
