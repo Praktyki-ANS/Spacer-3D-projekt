@@ -15,7 +15,6 @@ public class DoorScript : MonoBehaviour, Interaction
 
     public void DoInteraction(Transform doorT)
     {
-        Debug.Log("Interaction!");
         if (doorT != transform)
             return;
         if (isDoorOpened)

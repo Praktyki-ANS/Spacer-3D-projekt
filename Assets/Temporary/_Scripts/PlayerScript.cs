@@ -30,7 +30,7 @@ public class PlayerScript : MonoBehaviour
         {
             Debug.DrawRay(cameraT.position, cameraT.forward * playerReach, Color.red,0.1f);
             OnPlayerInteraction?.Invoke(hit.transform);
-            Debug.Log($"{hit.collider.name}");
+            Debug.Log($"Interacted with {hit.collider.name}");
         }
     }
 }
