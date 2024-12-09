@@ -494,8 +494,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 792025572}
+  - component: {fileID: 792025573}
   m_Layer: 5
-  m_Name: UI Cursors
+  m_Name: UI Interaction Cursors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,6 +524,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &792025573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792025571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce2101b6d52070409ba4a2755ca87c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 1891801814}
+  interactionCursor: {fileID: 1177705075}
+  lockedCursor: {fileID: 1166960433}
 --- !u!4 &801719715 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8694097830857090257, guid: 1f472f0439986094080ce4606763df23, type: 3}
@@ -632,9 +648,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5554309896210335486, guid: 1f472f0439986094080ce4606763df23, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1885061504}
-    - targetCorrespondingSourceObject: {fileID: 5554309896210335486, guid: 1f472f0439986094080ce4606763df23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1885061507}
   m_SourcePrefab: {fileID: 100100000, guid: 1f472f0439986094080ce4606763df23, type: 3}
 --- !u!4 &869873432 stripped
 Transform:
@@ -1205,21 +1218,6 @@ MonoBehaviour:
   interactionLayer:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &1885061507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885061501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ce2101b6d52070409ba4a2755ca87c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultCursor: {fileID: 1891801814}
-  interactionCursor: {fileID: 1177705075}
-  lockedCursor: {fileID: 1166960433}
 --- !u!1 &1891801814
 GameObject:
   m_ObjectHideFlags: 0

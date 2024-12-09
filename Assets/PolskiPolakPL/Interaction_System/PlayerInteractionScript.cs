@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerInteractionScript : MonoBehaviour
 {
     [SerializeField] Transform cameraT;
     [SerializeField] float playerReach = 1;

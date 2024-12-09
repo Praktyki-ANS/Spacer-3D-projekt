@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour, Interaction
 {
-    PlayerScript playerScript;
+    PlayerInteractionScript playerScript;
     [SerializeField] Animator doorAnimator;
     [SerializeField] bool isDoorOpened = false;
     Collider doorCollider;

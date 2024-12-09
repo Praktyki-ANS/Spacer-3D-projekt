@@ -10,5 +10,5 @@ public class GameManager : MonoBehaviour
         else
             Instance = this;
     }
-    public PlayerScript PlayerScript;
+    public PlayerInteractionScript PlayerScript;
 }
