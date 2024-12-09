@@ -6,6 +6,7 @@ public class DoorScript : MonoBehaviour, Interaction
     [SerializeField] Animator doorAnimator;
     [SerializeField] bool isDoorOpened = false;
     Collider doorCollider;
+    public bool Locked = false;
     private void Start()
     {
         doorCollider = GetComponent<Collider>();
@@ -15,13 +16,12 @@ public class DoorScript : MonoBehaviour, Interaction
 
     public void DoInteraction(Transform doorT)
     {
-        if (doorT != transform)
+        if (doorT != transform || Locked)
             return;
         if (isDoorOpened)
             CloseDoor();
         else
             OpenDoor();
-
     }
 
     void OpenDoor()

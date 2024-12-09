@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     public event Action<Transform> OnPlayerInteraction;
     RaycastHit hit;
     Ray ray;
+    public Transform interactiontHitT {  get; private set; }
 
     private void Start()
     {
@@ -24,7 +25,11 @@ public class PlayerScript : MonoBehaviour
         ray = new Ray(cameraT.position, cameraT.forward);
         Debug.DrawRay(cameraT.position, cameraT.forward * playerReach,Color.blue);
         if (!Physics.Raycast(ray, out hit, playerReach, interactionLayer))
+        {
+            interactiontHitT = null;
             return;
+        }
+        interactiontHitT = hit.transform;
         Debug.DrawRay(cameraT.position, cameraT.forward * playerReach, Color.green);
         if (Input.GetMouseButtonDown(0))
         {
