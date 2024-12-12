@@ -9,8 +9,8 @@ public class SceneManager : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
-    public void LoadInsideScene()
+    public void LoadInsideScene(int id)
     {
-       Application.LoadLevel(1);
+       Application.LoadLevel(id);
     }
 }
