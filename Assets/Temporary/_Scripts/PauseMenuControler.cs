@@ -16,20 +16,21 @@ public class PauseMenuControler : MonoBehaviour
             PauseGame();
         else
             ResumeGame();
-        isPaused = !isPaused;
     }
 
-    void PauseGame()
+    public void PauseGame()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+        AppManager.Instance.LockCursor(false);
         OnPaused?.Invoke();
-        Time.timeScale = 0.0f;
+        AppManager.Instance.FreezeTime(true);
+        isPaused = true;
     }
 
-    void ResumeGame()
+    public void ResumeGame()
     {
-        Cursor.lockState= CursorLockMode.Locked;
+        AppManager.Instance.FreezeTime(false);
+        AppManager.Instance.LockCursor(true);
         OnResume?.Invoke();
-        Time.timeScale = 1.0f;
+        isPaused = false;
     }
 }
