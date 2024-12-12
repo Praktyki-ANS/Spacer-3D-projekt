@@ -185,7 +185,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1624845998972871997}
   - component: {fileID: 3204993937804518470}
-  - component: {fileID: 37722949937499698}
+  - component: {fileID: 5256162231971479754}
+  - component: {fileID: 7010962657259564809}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -236,7 +237,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &37722949937499698
+--- !u!114 &5256162231971479754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,12 +246,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 5554309896210335486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f96853879a91c4e881e8611af47d3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 37ac5014ff78ac44181a9906b9a59221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 3.5
-  jumpHeight: 0.5
+  playerSpeed: 5
+  jumpHeight: 1
   gravityValue: -9.81
   playerVelocity: {x: 0, y: 0, z: 0}
-  playerCamera: {fileID: 7841879328863644374}
+  playerCamera: {fileID: 0}
   mouseSensitivity: 1
+--- !u!114 &7010962657259564809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5554309896210335486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff9e214b7d5cc54e8c6a2abf4fd4045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraT: {fileID: 8694097830857090257}
+  playerReach: 1.5
+  interactionLayer:
+    serializedVersion: 2
+    m_Bits: 256
