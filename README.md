@@ -1,6 +1,6 @@
 # Unity 3D Project - Virtual Tour of ANS
 
-Welcome to <a href="https://praktyki-ans.github.io/"><strong>our Unity 3D project!</strong></a> It is based on the older version created by ---, but has been enhanced with new features, optimizations, and updates. The goal of this project is to have working Virtual Tour of our college building..
+Welcome to <a href="https://praktyki-ans.github.io/"><strong>our Unity 3D project!</strong></a> It is based on the older version created by ---, but has been enhanced with new features, optimizations, and updates. The goal of this project is to have a working Virtual Tour of our college building.
 
 ## Table of Contents
 - [About](#about)
@@ -17,12 +17,12 @@ Welcome to <a href="https://praktyki-ans.github.io/"><strong>our Unity 3D projec
 ## About
 <a id="about"></a>
 
-This project is an enhanced version of --- built in Unity 3D. It includes improvements such as ---. 
+This project is an enhanced version of --- built-in Unity 3D. It includes improvements such as ---. 
 
 **Key highlights of the project:**
 - [change between areas to walk]
 - [the ability to explore freely]
-- [optimalization to aceptable level]
+- [optimalization to acceptable level]
 
 [Brief project description]
 
@@ -31,8 +31,8 @@ This project is an enhanced version of --- built in Unity 3D. It includes improv
 ## Features
 <a id="features"></a>
 
-- **Feature 1:** add buttons to switch between areas
-- **Feature 2:** before you would only move by click the arrows to directions
+- **Feature 1:** Add buttons to switch between areas
+- **Feature 2:** Before you would only move by clicking the arrows to directions
 - **Feature 3:** gwarant to stability
 - **Feature 4:** Description of feature
 
@@ -52,7 +52,7 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/Praktyki-ANS/Praktyki-ANS.github.io
    ```
-   Open the project in Unity: Open Unity Hub, click on Add, and select the cloned project folder.
+   Open the project in Unity: Open Unity Hub, click Add and select the cloned project folder.
 
 2. **Install any required packages**:
 
@@ -71,8 +71,8 @@ Make sure you have the following installed:
 
 Once you have the project set up, you can use it for:
 
-    [for walk through ans bulding]
-    [create your own walking simulator ]
+    [for walkthrough ANS building]
+    [create your own walking simulator]
     [getting to know the surroundings of the building]
 
 Feel free to explore the scenes, assets, and scripts included in the project.
@@ -107,7 +107,7 @@ This is an overview of the main folders and files in the project:
 ## License
 <a id="license"></a>
 
-This project is licensed under the MIT License. You can freely use, modify, and distribute this project, provided you include proper attribution.
+This project is licensed under the MIT License. You can freely use, modify, and distribute this project, including proper attribution.
 
 ---
 
@@ -122,23 +122,20 @@ We would like to thank the following people and resources for their contribution
 
    [the scripter Arkadiusz Czupajło](https://github.com/kolefka)
 
-   [Unity Asset Store resources, if applicable]
-   [Any other acknowledgments]
+   [Unity Asset Store]
+   
 
 ---
 
 ## Links
 <a id="links"></a>
 
-    Project Website: [Your website or demo link]
-    Issue Tracker: [Link to Issues page]
-    Contact: [Your contact information, email, or Discord]
+    
 
 ---
 
 ## Credits
 
-    [Your Name] – Project creator and lead developer
-    [Collaborators or contributors] – Special thanks to [insert names]
+    
 # Unity 3D Project - Virtual Tour of ANS
 
