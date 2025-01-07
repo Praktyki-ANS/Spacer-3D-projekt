@@ -360,6 +360,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3050836473218001456, guid: ce69949504feeab45907c27a138783d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1091315
+      objectReference: {fileID: 0}
     - target: {fileID: 3267469180942248081, guid: ce69949504feeab45907c27a138783d1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -468.31
@@ -368,14 +372,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Building Map
       objectReference: {fileID: 0}
+    - target: {fileID: 7761815896345127326, guid: ce69949504feeab45907c27a138783d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.73
+      objectReference: {fileID: 0}
     - target: {fileID: 7896819636372178710, guid: ce69949504feeab45907c27a138783d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135734027596802877, guid: ce69949504feeab45907c27a138783d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5155547036217422560, guid: ce69949504feeab45907c27a138783d1, type: 3}
     - {fileID: 3571442408646899509, guid: ce69949504feeab45907c27a138783d1, type: 3}
+    - {fileID: 5402968416081872446, guid: ce69949504feeab45907c27a138783d1, type: 3}
+    - {fileID: 280568875680676243, guid: ce69949504feeab45907c27a138783d1, type: 3}
+    - {fileID: 1147280821673878138, guid: ce69949504feeab45907c27a138783d1, type: 3}
+    - {fileID: 7670891028394096767, guid: ce69949504feeab45907c27a138783d1, type: 3}
+    - {fileID: 6362738814588091800, guid: ce69949504feeab45907c27a138783d1, type: 3}
+    - {fileID: 3843271399633500150, guid: ce69949504feeab45907c27a138783d1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce69949504feeab45907c27a138783d1, type: 3}
