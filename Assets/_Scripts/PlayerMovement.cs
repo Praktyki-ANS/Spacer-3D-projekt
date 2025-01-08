@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     
     [Header("PlayerScript Look")]
     [SerializeField] Camera playerCamera;
-    [SerializeField] float mouseSensitivity = 100f;
+    [SerializeField] float mouseSensitivity = 1f;
     private float xRotation = 0f;
 
 
