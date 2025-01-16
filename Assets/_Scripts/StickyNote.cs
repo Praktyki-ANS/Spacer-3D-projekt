@@ -1,7 +1,14 @@
 using UnityEngine;
+using TMPro;
 
 public class StickyNote : MonoBehaviour, Interaction
 {
+
+    [SerializeField] GameObject stickyNoteGO;
+    [SerializeField][TextArea()] string content;
+    [SerializeField] TMP_Text targetTextField;
+
+
     PlayerInteractionScript player;
 
     // Start is called before the first frame update
@@ -20,7 +27,10 @@ public class StickyNote : MonoBehaviour, Interaction
 
     void OpenStickyNote()
     {
-        Debug.Log($"You opened a sticky note!");
+        GameManager.Instance.PlayerScript.gameObject.GetComponent<PlayerMovement>().enabled = false;
+        AppManager.Instance.LockCursor(false);
+        targetTextField.text=content;
+        stickyNoteGO.SetActive(true);
     }
 
     private void OnDestroy()

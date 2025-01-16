@@ -1,13 +1,23 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PauseMenuControler : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance;
+
     [SerializeField] KeyCode pauseKey = KeyCode.Escape;
     bool isPaused = false;
     public UnityEvent OnPaused;
     public UnityEvent OnResume;
-    // Update is called once per frame
+
+    private void Awake()
+    {
+        if(Instance && Instance!=this)
+            Destroy(this);
+        else
+            Instance = this;
+    }
+
     void Update()
     {
         if (!Input.GetKeyDown(pauseKey))

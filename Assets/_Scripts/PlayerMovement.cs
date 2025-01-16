@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
         {
             playerVelocity.y = 0f;
         }
-
         PlayerMove();
         PlayerLook();
         if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -73,4 +72,5 @@ public class PlayerMovement : MonoBehaviour
     {
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
     }
+
 }
