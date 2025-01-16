@@ -4,9 +4,7 @@ using TMPro;
 public class StickyNote : MonoBehaviour, Interaction
 {
 
-    [SerializeField] GameObject stickyNoteGO;
     [SerializeField][TextArea()] string content;
-    [SerializeField] TMP_Text targetTextField;
 
 
     PlayerInteractionScript player;
@@ -29,8 +27,8 @@ public class StickyNote : MonoBehaviour, Interaction
     {
         GameManager.Instance.PlayerScript.gameObject.GetComponent<PlayerMovement>().enabled = false;
         AppManager.Instance.LockCursor(false);
-        targetTextField.text=content;
-        stickyNoteGO.SetActive(true);
+        StickyNoteUI.Instance.contentTextField.text = content;
+        StickyNoteUI.Instance.StickyNoteGO.SetActive(true);
     }
 
     private void OnDestroy()
