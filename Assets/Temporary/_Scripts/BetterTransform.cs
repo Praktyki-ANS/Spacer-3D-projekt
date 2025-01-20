@@ -3,19 +3,19 @@ using UnityEngine;
 
 public class BetterTransform : Transform
 {
-    private Transform transform;
+    readonly Transform outer;
     public int ChildIndex { get; private set; } = 0;
 
     public BetterTransform(Transform transform)
     {
-        this.transform = transform;
+        this.outer = transform;
     }
 
     public Transform GetNextChild()
     {
         ChildIndex++;
-        ChildIndex %= transform.childCount;
-        Transform child = transform.GetChild(ChildIndex);
+        ChildIndex %= outer.childCount;
+        Transform child = outer.GetChild(ChildIndex);
         return child;
     }
 
@@ -23,17 +23,17 @@ public class BetterTransform : Transform
     {
         ChildIndex--;
         if (ChildIndex < 0)
-            ChildIndex = transform.childCount-1;
+            ChildIndex = outer.childCount-1;
 
-        return transform.GetChild(ChildIndex);
+        return outer.GetChild(ChildIndex);
     }
 
     public List<Transform> GetChildrenExcept(int index)
     {
         List<Transform> children = new List<Transform>();
-        foreach (Transform child in transform)
+        foreach (Transform child in outer)
         {
-            if(child!=transform.GetChild(index))
+            if(child!=outer.GetChild(index))
                 children.Add(child);
         }
         return children;
@@ -41,7 +41,7 @@ public class BetterTransform : Transform
 
     public Transform GetLastChild()
     {
-        return transform.GetChild(transform.childCount-1);
+        return outer.GetChild(outer.childCount-1);
     }
 
 }
