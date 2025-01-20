@@ -9,21 +9,28 @@ public class DoorUICursor : MonoBehaviour
     DoorScript doorScript;
     Transform interactableT;
 
+    PlayerInteractionScript playerInteraction;
+
+    private void Start()
+    {
+        playerInteraction = GameManager.Instance.Player.GetComponent<PlayerInteractionScript>();
+    }
+
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         CheckCursorState();
     }
 
     bool LooksOnDoor()
     {
-        if(!GameManager.Instance.PlayerScript.interactiontHitT)
+        if(!playerInteraction.interactiontHitT)
         {
             this.interactableT = null;
             doorScript = null;
             return false;
         }
-        this.interactableT = GameManager.Instance.PlayerScript.interactiontHitT;
+        this.interactableT = playerInteraction.interactiontHitT;
         if (!interactableT.GetComponent<DoorScript>())
         {
             doorScript=null;

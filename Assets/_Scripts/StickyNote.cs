@@ -7,13 +7,13 @@ public class StickyNote : MonoBehaviour, Interaction
     [SerializeField][TextArea()] string content;
 
 
-    PlayerInteractionScript player;
+    PlayerInteractionScript playerInteraction;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameManager.Instance.PlayerScript;
-        player.OnPlayerInteraction += DoInteraction;
+        playerInteraction = GameManager.Instance.Player.GetComponent<PlayerInteractionScript>();
+        playerInteraction.OnPlayerInteraction += DoInteraction;
     }
 
     public void DoInteraction(Transform noteT)
@@ -25,14 +25,14 @@ public class StickyNote : MonoBehaviour, Interaction
 
     void OpenStickyNote()
     {
-        GameManager.Instance.PlayerScript.gameObject.GetComponent<PlayerMovement>().enabled = false;
         AppManager.Instance.LockCursor(false);
+        GameManager.Instance.Player.GetComponent<PlayerMovement>().enabled = false;
         StickyNoteUI.Instance.contentTextField.text = content;
         StickyNoteUI.Instance.StickyNoteGO.SetActive(true);
     }
 
     private void OnDestroy()
     {
-        player.OnPlayerInteraction -= DoInteraction;
+        playerInteraction.OnPlayerInteraction -= DoInteraction;
     }
 }
