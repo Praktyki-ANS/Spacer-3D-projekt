@@ -393,7 +393,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1115956545}
+    m_TransformParent: {fileID: 698785976}
     m_Modifications:
     - target: {fileID: 41386611132413316, guid: ce69949504feeab45907c27a138783d1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -421,15 +421,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2109390945200280166, guid: ce69949504feeab45907c27a138783d1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2109390945200280166, guid: ce69949504feeab45907c27a138783d1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2109390945200280166, guid: ce69949504feeab45907c27a138783d1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2109390945200280166, guid: ce69949504feeab45907c27a138783d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1893,7 +1893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &698785976
 Transform:
   m_ObjectHideFlags: 0
@@ -1909,6 +1909,7 @@ Transform:
   m_Children:
   - {fileID: 696921252}
   - {fileID: 200374198}
+  - {fileID: 1671088974}
   m_Father: {fileID: 1115956545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &698785977
@@ -1923,8 +1924,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cb3562fd7298b4a886f6b5a0001b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects: []
-  currentIndex: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,7 +3481,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 698785976}
-  - {fileID: 1671088974}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1128935180
@@ -3929,7 +3927,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1866596081}
   m_HandleRect: {fileID: 1866596080}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
