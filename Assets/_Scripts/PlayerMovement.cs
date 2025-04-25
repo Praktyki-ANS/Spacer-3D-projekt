@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     
     [Header("PlayerScript Look")]
     [SerializeField] Camera playerCamera;
-    [SerializeField] float mouseSensitivity = 100f;
+    [SerializeField] float mouseSensitivity = 1f;
     private float xRotation = 0f;
 
 
@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
         {
             playerVelocity.y = 0f;
         }
-
         PlayerMove();
         PlayerLook();
         if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -73,4 +72,5 @@ public class PlayerMovement : MonoBehaviour
     {
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
     }
+
 }
