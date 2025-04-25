@@ -1,14 +1,19 @@
 using UnityEngine;
+using TMPro;
 
 public class StickyNote : MonoBehaviour, Interaction
 {
-    PlayerInteractionScript player;
+
+    [SerializeField][TextArea()] string content;
+
+
+    PlayerInteractionScript playerInteraction;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameManager.Instance.PlayerScript;
-        player.OnPlayerInteraction += DoInteraction;
+        playerInteraction = GameManager.Instance.Player.GetComponent<PlayerInteractionScript>();
+        playerInteraction.OnPlayerInteraction += DoInteraction;
     }
 
     public void DoInteraction(Transform noteT)
@@ -20,11 +25,14 @@ public class StickyNote : MonoBehaviour, Interaction
 
     void OpenStickyNote()
     {
-        Debug.Log($"You opened a sticky note!");
+        AppManager.Instance.LockCursor(false);
+        GameManager.Instance.Player.GetComponent<PlayerMovement>().enabled = false;
+        StickyNoteUI.Instance.contentTextField.text = content;
+        StickyNoteUI.Instance.StickyNoteGO.SetActive(true);
     }
 
     private void OnDestroy()
     {
-        player.OnPlayerInteraction -= DoInteraction;
+        playerInteraction.OnPlayerInteraction -= DoInteraction;
     }
 }

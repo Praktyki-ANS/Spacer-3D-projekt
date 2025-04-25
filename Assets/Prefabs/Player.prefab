@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3044961412937513899}
   - component: {fileID: 3476434069809576982}
   - component: {fileID: 4428785118968358079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8694097830857090257}
   - component: {fileID: 7841879328863644374}
   - component: {fileID: 6744187553318830102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -187,8 +187,7 @@ GameObject:
   - component: {fileID: 3204993937804518470}
   - component: {fileID: 5256162231971479754}
   - component: {fileID: 7010962657259564809}
-  - component: {fileID: 5413161145021300896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,15 +272,3 @@ MonoBehaviour:
   interactionLayer:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &5413161145021300896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5554309896210335486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c5fd3494f528c24fbee3d01054ace64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

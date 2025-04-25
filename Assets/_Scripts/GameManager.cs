@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,5 +11,5 @@ public class GameManager : MonoBehaviour
         else
             Instance = this;
     }
-    public PlayerInteractionScript PlayerScript;
+    public GameObject Player;
 }
