@@ -2,20 +2,7 @@
 
 Welcome to <a href="https://praktyki-ans.github.io/"><strong>our Unity 3D project!</strong></a> It is based on the older version created by ---, but has been enhanced with new features, optimizations, and updates. The goal of this project is to have a working Virtual Tour of our college building.
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Project Structure](#project-structure)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
----
-
 ## About
-<a id="about"></a>
 
 This project is an enhanced version of --- built-in Unity 3D. It includes improvements such as ---. 
 
